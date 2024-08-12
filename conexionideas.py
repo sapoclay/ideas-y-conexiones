@@ -65,7 +65,7 @@ Ejecutando la aplicación:
         window.show()
         sys.exit(app.exec_())
 """
-
+import os
 import sys
 import math
 import json
@@ -349,7 +349,7 @@ class MainWindow(QMainWindow):
         current_directory = Path(__file__).parent
 
         # Establecer un icono personalizado
-        icon_path = current_directory / 'icono.ico'
+        icon_path = current_directory / './conexionidedas.ico'
         if icon_path.exists():
             app.setWindowIcon(QIcon(str(icon_path)))
             self.tray_icon = QSystemTrayIcon(QIcon(str(icon_path)), self)
@@ -604,7 +604,17 @@ class MainWindow(QMainWindow):
     def show_about(self):
         about_message_box = QMessageBox(self)
         about_message_box.setWindowTitle("Sobre el programa")
-        about_message_box.setIconPixmap(QPixmap("logo.png"))
+
+        # Obtener la ruta del directorio donde se encuentra el archivo conexionideas.py
+        current_directory = os.path.dirname(os.path.abspath(__file__))
+        image_path = os.path.join(current_directory, "entreunosyceros.png")
+        
+        # Cargar la imagen y verificar si se cargó correctamente
+        pixmap = QPixmap(image_path)
+        if pixmap.isNull():
+            print(f"Error: No se pudo cargar la imagen en la ruta {image_path}")
+        else:
+            about_message_box.setIconPixmap(pixmap)
 
         about_message_box.setText(
             "<br/>"
