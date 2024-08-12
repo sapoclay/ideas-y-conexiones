@@ -81,5 +81,5 @@ Agradecimientos
 
 Gracias a la comunidad de desarrolladores de PyQt5 por su excelente documentación y recursos.
 
-[Artículo](https://entreunosyceros.net/ideas-y-conexiones-entre-si/ "Ideas y conexiones. Crea, visualiza y conecta ideas entre si")
+[Artículo] https://entreunosyceros.net/ideas-y-conexiones-entre-si/ 
 
