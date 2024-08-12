@@ -80,3 +80,5 @@ Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más 
 Agradecimientos
 
 Gracias a la comunidad de desarrolladores de PyQt5 por su excelente documentación y recursos.
+
+[Artículo]([https://github.com](https://entreunosyceros.net/ideas-y-conexiones-entre-si/))
