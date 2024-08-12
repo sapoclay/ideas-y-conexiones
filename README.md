@@ -52,7 +52,7 @@ Para ejecutar la aplicación, simplemente corre el script principal:
 
 ```bash
 
-python main.py
+python conexionideas.py
 ```
 
 Controles
